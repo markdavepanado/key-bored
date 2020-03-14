@@ -61,7 +61,7 @@ body {
 .capslock-container .top {
   padding: 5px 0;
   height: 15%;
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -71,7 +71,7 @@ body {
 .capslock-container .bottom {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  /* background-color: red; */
   height: 80%;
   width: 100%;
   margin-top: 20px;
