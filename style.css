@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3c5d52;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  /* width: 1100px; for small size  */
+}
+
+.keyboard-container {
+  height: 50vh;
+  width: calc(100% - 2px);
+  /* width: 1000px; for small size  */
+  text-align: center;
+  border: 1px solid #283e37;
+  background-color: #283e37;
+
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.capslock-container {
+  /* background-color: yellow; */
+  width: 60%;
+}
+
+.scrolllock-container {
+  background-color: yellowgreen;
+  width: 20%;
+}
+
+.numlock-container {
+  background-color: red;
+  width: 25%;
+}
+
+.capslock-container,
+.scrolllock-container,
+.numlock-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capslock-container .top {
+  padding: 5px 0;
+  height: 15%;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capslock-container .bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  height: 80%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.backquote-to-backspace,
+.tab-to-back-slash,
+.capslock-to-enter,
+.shiftleft-to-shiftright,
+.ctrlleft-to-ctrlright {
+  height: 20%;
+  /* background-color: blue; */
+
+  margin: 0 0 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backquote-to-backspace {
+  margin-top: 5px;
+}
+
+.backspace.box,
+.box {
+  height: 100%;
+  /* width: 40px; */
+  width: 10%;
+  background-color: #324e44;
+
+  margin: 0 2px;
+}
+
+.backspace.box,
+.enter.box,
+.capslock.box {
+  /* width: 80px; */
+  width: 20%;
+}
+
+.tab.box,
+.backslash.box {
+  /* width: 60px; */
+  width: 15%;
+}
+
+.shiftleft.box {
+  width: 25%;
+}
+
+.shiftright.box {
+  width: 30%;
+}
+
+.space.box {
+  width: 50%;
+}
+
+.f1-to-f4-container,
+.f5-to-f8-container,
+.f9-to-f12-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 25%;
+}
+
+.top .box {
+  width: 6%;
+}
+
+.f1-to-f4-container .box,
+.f5-to-f8-container .box,
+.f9-to-f12-container .box {
+  width: 40%;
+}
+
+.dot {
+  height: 1vh;
+  width: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
