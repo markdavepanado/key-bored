@@ -39,7 +39,7 @@ body {
 }
 
 .scrolllock-container {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   width: 20%;
 }
 
@@ -58,6 +58,7 @@ body {
   justify-content: space-between;
 }
 
+.scrolllock-container .top,
 .capslock-container .top {
   padding: 5px 0;
   height: 15%;
@@ -68,6 +69,7 @@ body {
   align-items: center;
 }
 
+.scrolllock-container .bottom,
 .capslock-container .bottom {
   display: flex;
   flex-direction: column;
@@ -149,6 +151,73 @@ body {
 .f5-to-f8-container .box,
 .f9-to-f12-container .box {
   width: 40%;
+}
+
+.scrolllock-container .top {
+  justify-content: center;
+}
+.scrolllock-container .top .box {
+  width: 18%;
+}
+
+.scrolllock-container .bottom {
+  justify-content: space-between;
+}
+
+.scrolllock-container .bottom .arrow-keys,
+.scrolllock-container .bottom .system-commands {
+  width: 100%;
+}
+
+.scrolllock-container .bottom .system-commands {
+  height: 35%;
+}
+
+.scrolllock-container .bottom .system-commands .delete-to-pagedown,
+.scrolllock-container .bottom .system-commands .insert-to-pageup {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5px;
+}
+
+.scrolllock-container .bottom .system-commands .insert-to-pageup {
+  margin-top: 5px;
+}
+
+.scrolllock-container .bottom .system-commands .delete-to-pagedown .box,
+.scrolllock-container .bottom .system-commands .insert-to-pageup .box {
+  height: 100%;
+  width: 18%;
+}
+
+.scrolllock-container .bottom .arrow-keys {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 0 5px;
+}
+
+.scrolllock-container .bottom .arrow-keys .arrowup {
+  height: 50%;
+  margin: 0 0 5px;
+}
+
+.scrolllock-container .bottom .arrow-keys .arrowleft-to-arrowright {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolllock-container .bottom .arrow-keys .box {
+  width: 18%;
 }
 
 .dot {
