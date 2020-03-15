@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Key-Bored</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -114,13 +117,13 @@
         </div>
 
         <div class="scrolllock-container">
-          <div class="top">
+          <section class="top">
             <div class="sysreq box"></div>
             <div class="scolllock box"></div>
             <div class="break box"></div>
-          </div>
+          </section>
 
-          <div class="bottom">
+          <section class="bottom">
             <div class="system-commands">
               <div class="insert-to-pageup">
                 <div class="insert box"></div>
@@ -142,11 +145,64 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="numlock-container"></div>
-      </section>
+
+          <div class="numlock-container">
+            <section class="logo">
+                <img src="/images/logo.png" alt="logo">
+                <div class="developer">
+                    <small>Made by</small>
+                    <a href="https://www.facebook.com/dabeeeeeee7" target="_blank">Mark Dave Panado</a>
+                </div>
+            </section>
+
+            <section class="three-dots">
+                <div class="numlock-led dot"></div>
+                <div class="capslock-led dot"></div>
+                <div class="scrolllock-led dot"></div>
+            </section>
+
+            <section class="numpad-keys">
+                <div class="left">
+                    <div class="numlock-to-numpadmultiply">
+                        <div class="numlock box"></div>
+                        <div class="numpaddivide box"></div>
+                        <div class="numpadmultiply box"></div>
+                    </div>
+                    <div class="numpad7-to-numpad9">
+                        <div class="numpad7 box"></div>
+                        <div class="numpad8 box"></div>
+                        <div class="numpad9 box"></div>
+                    </div>
+                    <div class="numpad4-to-numpad6">
+                        <div class="numpad4 box"></div>
+                        <div class="numpad5 box"></div>
+                        <div class="numpad6 box"></div>
+                    </div>
+                    <div class="numpad1-to-numpad3">
+                        <div class="numpad1 box"></div>
+                        <div class="numpad2 box"></div>
+                        <div class="numpad3 box"></div>
+                    </div>
+                    <div class="numpad0-to-numpaddecimal">
+                        <div class="numpad0 box"></div>
+                        <div class="numpaddecimal box"></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="numpadsubtract box"></div>
+                    <div class="numpadadd box"></div>
+                    <div class="numpadenter box"></div>
+                </div>
+            </section>
+         </div>
+
+         </section>
+
+
     </div>
 
+    
     <script src="keyboard.js"></script>
   </body>
 </html>

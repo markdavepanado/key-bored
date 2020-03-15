@@ -7,6 +7,7 @@
 body {
   background-color: #3c5d52;
   overflow: auto;
+  font-family: "Work Sans", sans-serif;
 }
 
 .container {
@@ -44,8 +45,7 @@ body {
 }
 
 .numlock-container {
-  background-color: red;
-  width: 25%;
+  width: 20%;
 }
 
 .capslock-container,
@@ -194,7 +194,8 @@ body {
 }
 
 .scrolllock-container .bottom .arrow-keys {
-  height: 35%;
+  /* height: 35%; */
+  height: 37%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,9 +221,145 @@ body {
   width: 18%;
 }
 
+.numlock-container {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 5px 0 0;
+}
+
+.numlock-container .logo,
+.numlock-container .three-dots,
+.numlock-container .numpad-keys {
+  width: 100%;
+}
+
+.numlock-container .logo {
+  /* background-color: blue; */
+  height: 10%;
+
+  display: flex;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  align-items: center;
+}
+
+.numlock-container .logo img {
+  width: 10%;
+}
+
+.numlock-container .logo .developer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #c0c0c0;
+  line-height: 0.65em;
+
+  margin-left: 5px;
+}
+
+.numlock-container .logo small {
+  font-size: 0.5em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+}
+
+.numlock-container .logo a {
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  color: #b1cdc4;
+}
+
+.numlock-container .three-dots {
+  height: 12%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .dot {
-  height: 1vh;
-  width: 10px;
-  background-color: yellow;
+  height: 25%;
+  width: 4%;
+  background-color: #324e44;
   border-radius: 50%;
+}
+
+.numlock-container .numpad-keys {
+  /* height: 60%; */
+  height: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numlock-container .numpad-keys .left,
+.numlock-container .numpad-keys .right {
+  height: 100%;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numlock-container .numpad-keys .left {
+  margin-right: 2px;
+}
+
+.numlock-container .numpad-keys .left .numpad0-to-numpaddecimal,
+.numlock-container .numpad-keys .left .numlock-to-numpadmultiply,
+.numlock-container .numpad-keys .left .numpad7-to-numpad9,
+.numlock-container .numpad-keys .left .numpad4-to-numpad6,
+.numlock-container .numpad-keys .left .numpad1-to-numpad3 {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0 0 5px;
+}
+
+/* .numlock-container .numpad-keys .left .numlock-to-numpadmultiply {
+  background-color: brown;
+}
+
+.numlock-container .numpad-keys .left .numpad7-to-numpad9 {
+  background-color: burlywood;
+}
+
+.numlock-container .numpad-keys .left .numpad4-to-numpad6 {
+  background-color: cadetblue;
+}
+
+.numlock-container .numpad-keys .left .numpad1-to-numpad3 {
+  background-color: chocolate;
+} */
+
+.numlock-container .numpad-keys .right {
+  width: 22%;
+  /* align-items: flex-start; */
+  align-items: center;
+}
+
+.numlock-container .numpad-keys .box {
+  height: 100%;
+  width: 100%;
+}
+
+.numlock-container .numpad-keys .left .numpaddecimal.box {
+  width: 49%;
+}
+
+.numlock-container .numpad-keys .right .box {
+  margin: 0 0 5px;
+}
+
+.numlock-container .numpad-keys .right .numpadsubtract.box {
+  height: 47%;
 }
