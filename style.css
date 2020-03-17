@@ -63,6 +63,8 @@ body {
   font-size: 7em;
 }
 
+.scrolllock-container .bottom,
+.scrolllock-container .top,
 .capslock-container .bottom,
 .capslock-container .top {
   font-size: 0.65em;
@@ -121,6 +123,8 @@ body {
   padding: 3px 5px;
 }
 
+.break.box,
+.sysreq.box,
 .comma.box,
 .period.box,
 .slash.box,
@@ -134,9 +138,14 @@ body {
   justify-content: space-evenly;
 }
 
+.sysreq.box small:nth-of-type(1) {
+  font-size: 0.65em;
+}
+
 .box {
   padding: 1px 5px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .backspace.box,
@@ -260,7 +269,22 @@ body {
 
 .scrolllock-container .bottom .arrow-keys .box {
   width: 18%;
+  padding: 0;
 }
+
+.scrolllock-container .bottom .arrow-keys .box p {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 1.5em;
+}
+
+/* .scrolllock-container .bottom .arrow-keys .arrowright.box p,
+.scrolllock-container .bottom .arrow-keys .arrowleft.box p {
+  font-size: 1.5em;
+} */
 
 .numlock-container {
   /* background-color: blue; */
