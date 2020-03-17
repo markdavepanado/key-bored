@@ -9,7 +9,8 @@ function keyDownEvent(e) {
     e.preventDefault();
   }
 
-  console.log(e);
+  console.log(keysdown);
+
   if (e.keyCode === 20 || e.keyCode === 145 || e.keyCode === 144) {
     if (!(e.key in keysdown)) {
       keysdown[e.key] = true;
@@ -22,8 +23,24 @@ function keyDownEvent(e) {
     `.box[data-key="${e.keyCode}"]` && `.box[data-code="${e.code}"]`
   );
 
+  const capslock = document.querySelector(".capslock-led");
+  const scrollock = document.querySelector(".scrolllock-led");
+  const numlock = document.querySelector(".numlock-led");
+
   try {
     key.classList.add("pressed");
+
+    if (e.keyCode === 20) {
+      capslock.classList.add("active");
+    }
+
+    if (e.keyCode === 145) {
+      scrollock.classList.add("active");
+    }
+
+    if (e.keyCode === 144) {
+      numlock.classList.add("active");
+    }
   } catch (m) {
     // console.log(m);
   }
@@ -40,9 +57,25 @@ function keyUpEvent(e) {
     `.box[data-key="${e.keyCode}"]` && `.box[data-code="${e.code}"]`
   );
 
+  const capslock = document.querySelector(".capslock-led");
+  const scrollock = document.querySelector(".scrolllock-led");
+  const numlock = document.querySelector(".numlock-led");
+
   if (!(e.key in keysdown)) {
     try {
       key.classList.remove("pressed");
+
+      if (e.key === "CapsLock") {
+        capslock.classList.remove("active");
+      }
+
+      if (e.key === "ScrollLock") {
+        scrollock.classList.remove("active");
+      }
+
+      if (e.key === "NumLock") {
+        numlock.classList.remove("active");
+      }
     } catch (m) {
       // console.log(m);
     }
