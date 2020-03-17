@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 20px;
+  padding: 10px 20px;
 
   /* width: 1100px; for small size  */
 }
@@ -151,10 +151,13 @@ body {
   cursor: pointer;
 
   transition: all 0.07s ease;
+
+  -webkit-box-shadow: inset 0px 1px 3px #000;
+  box-shadow: inset 0px 0px 2px #000;
 }
 
 .box.pressed {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   color: #324e44;
   background-color: #b1cdc4;
 }
@@ -407,22 +410,6 @@ body {
   margin: 0 0 5px;
 }
 
-/* .numlock-container .numpad-keys .left .numlock-to-numpadmultiply {
-  background-color: brown;
-}
-
-.numlock-container .numpad-keys .left .numpad7-to-numpad9 {
-  background-color: burlywood;
-}
-
-.numlock-container .numpad-keys .left .numpad4-to-numpad6 {
-  background-color: cadetblue;
-}
-
-.numlock-container .numpad-keys .left .numpad1-to-numpad3 {
-  background-color: chocolate;
-} */
-
 .numlock-container .numpad-keys .right {
   width: 22%;
   /* align-items: flex-start; */
@@ -447,7 +434,7 @@ body {
 }
 
 .numlock-container .numpad-keys .box {
-  padding: 2px 6px;
+  padding: 5px 6px;
   font-size: 1.1em;
 }
 
@@ -455,4 +442,79 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.minus.box {
+  padding: 0 5px 3px !important;
+}
+
+.numpadsubtract.box,
+.numpaddecimal.box {
+  padding: 0 6px 5px !important;
+}
+
+.keys-container {
+  margin: 0px 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: 5px solid;
+  padding: 0 5px;
+}
+
+.keys-container .big-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 2em;
+
+  margin: 0 5px;
+}
+
+.keys-container .big-text small {
+  font-size: 0.8em;
+}
+
+.keys-container .big-text h1 {
+  font-size: 3em;
+
+  /* border: 1px solid;
+  padding: 20px; */
+}
+
+.key-details,
+.key-type {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  margin: 0 20px;
+}
+
+.keys-container .key-type small,
+.keys-container .key-details small {
+  font-size: 0.6em;
+}
+
+.keys-container .key-type h4,
+.keys-container .key-details h4 {
+  font-size: 0.8em;
+}
+
+.key-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid;
+
+  margin: 20px 0;
+  padding: 10px 0 0;
 }

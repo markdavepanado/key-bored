@@ -9,8 +9,7 @@ function keyDownEvent(e) {
     e.preventDefault();
   }
 
-  console.log(keysdown);
-
+  console.log(e);
   if (e.keyCode === 20 || e.keyCode === 145 || e.keyCode === 144) {
     if (!(e.key in keysdown)) {
       keysdown[e.key] = true;
@@ -18,6 +17,17 @@ function keyDownEvent(e) {
       delete keysdown[e.key];
     }
   }
+
+  const keyBigText = document.getElementById("keyBigText");
+  const keyCodeDetails = document.getElementById("keyCodeDetails");
+  const codeDetails = document.getElementById("codeDetails");
+  const keyLocationDetails = document.getElementById("keyLocationDetails");
+  const keyWhichDetails = document.getElementById("keyWhichDetails");
+
+  const ctrlKeyKeyType = document.getElementById("ctrlKeyKeyType");
+  const shiftKeyKeyType = document.getElementById("shiftKeyKeyType");
+  const altKeyKeyType = document.getElementById("altKeyKeyType");
+  const metaKeyKeyType = document.getElementById("metaKeyKeyType");
 
   const key = document.querySelector(
     `.box[data-key="${e.keyCode}"]` && `.box[data-code="${e.code}"]`
@@ -29,6 +39,16 @@ function keyDownEvent(e) {
 
   try {
     key.classList.add("pressed");
+    keyBigText.innerHTML = e.key;
+    keyCodeDetails.innerHTML = e.keyCode;
+    codeDetails.innerHTML = e.code;
+    keyLocationDetails.innerHTML = e.location;
+    keyWhichDetails.innerHTML = e.which;
+
+    ctrlKeyKeyType.innerHTML = e.ctrlKey;
+    shiftKeyKeyType.innerHTML = e.shiftKey;
+    altKeyKeyType.innerHTML = e.altKey;
+    metaKeyKeyType.innerHTML = e.metaKey;
 
     if (e.keyCode === 20) {
       capslock.classList.add("active");
@@ -48,7 +68,7 @@ function keyDownEvent(e) {
 
 function removeTransition(e) {
   // console.log(e.propertyName);
-  if (e.propertyName !== "transform") return; // skip if it's not a transform
+  // if (e.propertyName !== "transform") return;
   this.classList.remove("pressed");
 }
 
