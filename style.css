@@ -8,6 +8,7 @@ body {
   background-color: #3c5d52;
   overflow: auto;
   font-family: "Work Sans", sans-serif;
+  color: #b1cdc4;
 }
 
 .container {
@@ -58,6 +59,16 @@ body {
   justify-content: space-between;
 }
 
+.capslock-container .bottom {
+  font-size: 7em;
+}
+
+.capslock-container .bottom,
+.capslock-container .top {
+  font-size: 0.65em;
+  text-align: left;
+}
+
 .scrolllock-container .top,
 .capslock-container .top {
   padding: 5px 0;
@@ -96,6 +107,36 @@ body {
 
 .backquote-to-backspace {
   margin-top: 5px;
+}
+
+.backquote-to-backspace .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 3px 5px;
+}
+
+.bottom .box {
+  padding: 3px 5px;
+}
+
+.comma.box,
+.period.box,
+.slash.box,
+.semicolon.box,
+.quote.box,
+.bracketleft.box,
+.bracketright.box,
+.backslash.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.box {
+  padding: 1px 5px;
+  border-radius: 3px;
 }
 
 .backspace.box,
