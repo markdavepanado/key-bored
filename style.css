@@ -63,6 +63,7 @@ body {
   font-size: 7em;
 }
 
+.numlock-container .numpad-keys,
 .scrolllock-container .bottom,
 .scrolllock-container .top,
 .capslock-container .bottom,
@@ -427,4 +428,15 @@ body {
 
 .numlock-container .numpad-keys .right .numpadsubtract.box {
   height: 47%;
+}
+
+.numlock-container .numpad-keys .box {
+  padding: 2px 6px;
+  font-size: 1.1em;
+}
+
+.numlock-container .numpad-keys .left .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
