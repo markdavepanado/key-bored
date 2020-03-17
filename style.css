@@ -149,6 +149,11 @@ body {
   cursor: pointer;
 }
 
+.box.pressed {
+  color: #324e44;
+  background-color: #b1cdc4;
+}
+
 .backspace.box,
 .box {
   height: 100%;
