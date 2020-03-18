@@ -61,14 +61,10 @@ function keyDownEvent(e) {
     if (e.keyCode === 144) {
       numlock.classList.add("active");
     }
-  } catch (m) {
-    // console.log(m);
-  }
+  } catch (m) {}
 }
 
 function removeTransition(e) {
-  // console.log(e.propertyName);
-  // if (e.propertyName !== "transform") return;
   this.classList.remove("pressed");
 }
 
@@ -96,10 +92,6 @@ function keyUpEvent(e) {
       if (e.key === "NumLock") {
         numlock.classList.remove("active");
       }
-    } catch (m) {
-      // console.log(m);
-    }
+    } catch (m) {}
   }
-
-  // console.log(key);
 }
