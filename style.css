@@ -553,3 +553,54 @@ body {
   background-color: #b1cdc4;
   z-index: 1;
 }
+
+@media only screen and (max-width: 1145px) {
+  .sysreq.box small:nth-of-type(2) {
+    font-size: 0.65em;
+  }
+}
+
+/* @media only screen and (max-width: 1100px) {
+  .keyboard-container {
+    height: 40vh;
+  }
+} */
+
+@media only screen and (max-width: 1050px) {
+  .capslock-container .bottom .box,
+  .capslock-container .top .box,
+  .numlock-container .numpad-keys .box,
+  .scrolllock-container .top .box,
+  .scrolllock-container .bottom .box {
+    font-size: 0.9em;
+  }
+
+  .scrolllock-container .bottom .arrow-keys .box p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 1100px;
+    /* overflow: auto; */
+  }
+
+  .keyboard-container {
+    width: 1050px;
+  }
+}
+
+.disable-smallscreen {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  /* .disable-smallscreen {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(000, 000, 000, 0.5);
+  } */
+}
