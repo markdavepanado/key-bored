@@ -511,6 +511,11 @@ body {
   font-size: 0.8em;
 }
 
+.keys-container .key-type h4:hover,
+.keys-container .key-details h4:hover {
+  transform: scale(1.5);
+}
+
 .key-information {
   display: flex;
   justify-content: center;
@@ -528,11 +533,23 @@ body {
   align-items: center;
 }
 
-.developer-keyInfo-container .developer img {
-  width: 10%;
-}
-
 .developer-keyInfo-container .developer {
   padding: 0 0 10px;
   text-align: center;
+}
+
+.developer-keyInfo-container .developer a img {
+  width: 10%;
+  transition: all 0.6s ease;
+}
+
+.developer-keyInfo-container .developer a:hover img {
+  transform: scale(1.2);
+  -webkit-box-shadow: 0px 0px 5px 4px #b1cdc4;
+  box-shadow: 0px 0px 5px 4px #b1cdc4;
+
+  border-radius: 20%;
+
+  background-color: #b1cdc4;
+  z-index: 1;
 }
